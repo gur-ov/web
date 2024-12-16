@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дневник размышлений MG</title>
+    <style>
+        body {
+            font-family: Verdana, Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden; /* Убирает горизонтальную прокрутку */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #eee;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #0000EE;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            flex: 1;
+        }
+        h1 {
+            font-size: 1.8rem;
+            color: #fff;
+            text-align: center;
+        }
+        .category {
+            margin-top: 20px;
+        }
+        .category h2 {
+            font-size: 1.4rem;
+            color: #444;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .article {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        .article a {
+            font-weight: bold;
+            color: #0066cc;
+        }
+        .article a:hover {
+            text-decoration: underline;
+        }
+        .article .date {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Дневник размышлений MG</h1>
+        <p>Размышления, исследования и тексты</p>
+    </header>
+
+    <nav>
+        <a href="./index.html">Статьи</a>
+        <a href="./links.html">Ссылки</a>
+    </nav>
+
+    <main>
+
+        <section class="category">
+            <h2>Проект SecretBratislava</h2>
+            <div class="article">
+                <a href="https://t.me/secret_bratislava">Группа в Telegram</a>
+                <p>Канал о чудесах и секретах Братиславы и Словакии, явных и спрятанных.</p>
+                <p class="date">Дата публикации: 16 декабря 2024</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Дневник размышлений MG</p>
+    </footer>
+</body>
+</html>
