@@ -1,3 +1,6 @@
+            
+
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -59,12 +62,30 @@
             color: #555;
             border-color: #555;
         }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        footer a {
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+        }
+
+        footer a img {
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="logo-placeholder">
-            <img src="./img/pr.png" alt="Фото профиля" style="width: 150px; height: auto; margin-right: 20px;">
+            <img src="./img/pr.png" alt="Фото профиля" style="width: 100px; height: auto; margin-right: 10px;">
         </div>
         <h1>Михаил Гуров</h1>
     </header>
@@ -74,5 +95,9 @@
         <a href="#radio">Радио</a>
         <a href="#philately">Филателия</a>
     </nav>
+    <footer>     
+        <a href="https://t.me/gurovmichal"><img src="https://www.svgrepo.com/show/446809/telegram-alt.svg" alt="Telegram"></a>
+        <a href="mailto:gurov.michal@gmail.com"><img src="https://www.svgrepo.com/show/511917/email-1572.svg" alt="Email"></a>
+    </footer>
 </body>
 </html>
