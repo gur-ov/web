@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тексты - Михаил Гуров</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Georgia", serif;
+            color: #333;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-style: italic;
+            margin: 5px 0 0;
+            font-size: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #333;
+            border-bottom: 1px solid #333;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #555;
+            border-color: #555;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin: 15px 0 5px;
+        }
+
+        .article {
+            margin-bottom: 20px;
+        }
+
+        .article p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Михаил Гуров</h1>
+        <p>Размышления, исследования и тексты</p>
+    </header>
+    <nav>
+        <a href="#theology">Теология</a>
+        <a href="#section2">Пункт 2</a>
+    </nav>
+    <main>
+        <h2 id="theology">Теология</h2>
+        <h3>Рождество</h3>
+        <div class="article">
+            <h4><a href="https://example.com/christmas" target="_blank">Заголовок статьи о Рождестве</a></h4>
+            <p>Аннотация: Краткое описание содержания статьи.</p>
+            <p>Источники: Книга, автор, публикация.</p>
+            <p>Дата публикации: 01.01.2025</p>
+        </div>
+        <h3>Псалмы</h3>
+        <div class="article">
+            <h4><a href="https://example.com/psalms" target="_blank">Заголовок статьи о Псалмах</a></h4>
+            <p>Аннотация: Краткое описание содержания статьи.</p>
+            <p>Источники: Книга, автор, публикация.</p>
+            <p>Дата публикации: 15.12.2024</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Михаил Гуров</p>
+    </footer>
+</body>
+</html>
