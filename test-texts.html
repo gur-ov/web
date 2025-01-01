@@ -27,6 +27,16 @@
             margin: 0;
         }
 
+        header h1 a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        header h1 a:hover {
+            color: #555;
+        }
+
         header p {
             font-style: italic;
             margin: 5px 0 0;
@@ -72,11 +82,13 @@
         }
 
         .article {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
         }
 
         .article h4 {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .metadata {
@@ -92,6 +104,10 @@
             margin-bottom: 3px;
         }
 
+        .metadata p {
+            margin: 5px 0 10px;
+        }
+
         footer {
             text-align: center;
             padding: 10px 0;
@@ -103,7 +119,7 @@
 </head>
 <body>
     <header>
-        <h1>Михаил Гуров</h1>
+        <h1><a href="index.html">Михаил Гуров</a></h1>
         <p>Размышления, исследования и тексты</p>
     </header>
     <nav>
