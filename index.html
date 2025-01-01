@@ -3,220 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дневник размышлений MG</title>
+    <title>Михаил Гуров</title>
     <style>
         body {
-            font-family: Verdana, Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #000;
             margin: 0;
             padding: 0;
+            font-family: "Georgia", serif;
+            color: #333;
+            background-color: #f9f9f9;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
-            overflow-x: hidden; /* Убирает горизонтальную прокрутку */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
+
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
             text-align: center;
+            margin-bottom: 50px;
         }
+
+        header .logo-placeholder {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #aaa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
         nav {
-            background-color: #eee;
-            padding: 10px;
-            border-top: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
+
         nav a {
-            margin-right: 15px;
             text-decoration: none;
-            color: #0000EE;
+            font-size: 1.2rem;
+            color: #333;
+            border-bottom: 1px solid #333;
+            transition: color 0.3s ease, border-color 0.3s ease;
         }
+
         nav a:hover {
-            text-decoration: underline;
+            color: #555;
+            border-color: #555;
         }
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            flex: 1;
-        }
-        h1 {
-            font-size: 1.8rem;
-            color: #fff;
-            text-align: center;
-        }
-        .category {
-            margin-top: 20px;
-        }
-        .category h2 {
-            font-size: 1.4rem;
-            color: #444;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
-        }
-        .article {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-        }
-        .article a {
-            font-weight: bold;
-            color: #0066cc;
-        }
-        .article a:hover {
-            text-decoration: underline;
-        }
-        .article .date {
-            font-size: 0.9rem;
-            color: #666;
-            margin-top: 5px;
-        }
+
         footer {
-            text-align: center;
-            font-size: 0.9rem;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            position: relative;
-            bottom: 0;
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        footer a {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        footer a img {
             width: 100%;
+            height: auto;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        footer a:hover img {
+            filter: grayscale(0%);
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Дневник размышлений MG</h1>
-        <p>Размышления, исследования и тексты</p>
+        <div class="logo-placeholder">
+            <img src="./img/pr.png" alt="Фото профиля" style="width: 100px; height: auto; margin-right: 10px;">
+        </div>
     </header>
-
     <nav>
-        <a href="./index.html">Статьи</a>
-        <a href="./links.html">Ссылки</a>
-
-<a href="./radio.html">
-    <img src="./img/radio_icon.png" alt="Enter the radio" style="width:32px;height:auto;">
-</a>
-        
+        <a href="#philosophy">Тексты</a>
+        <a href="#sommelier">Вино</a>
+        <a href="#radio">Радио</a>
+        <a href="#philately">Филателия</a>
     </nav>
-
-    <main>
-
-    <!--
-        <section class="category">
-            <h2>Христианство</h2>
-            <h3>Рождество</h3>
-            <div class="article">
-                <a href="https://telegra.ph/ZHdem-advent-12-16">Первая неделя адвента</a>
-                <p><div class="date">Краткое описание</div> 
-                    Конец ноября означает, что Европа начинает готовиться к Рождеству, без преувеличения самому желанному и популярному празднику. 
-                    В этом году европейской столицей Рождества был объявлен чешский город Брно. В рекламе, развешанной по всему городу, было написано: 
-                    «Проведите Адвент в Брно! Второе лучшее Рождество в мире! Сразу после того, которое будет у вас дома». 
-                    Пожалуй, более милой рождественской рекламы я еще не видел (наверное, за исключением одной, о которой расскажу как-нибудь потом).</p>
-                <p class="date">Дата публикации: 16 декабря 2024</p>
-            </div>
-        </section>
--->
-        
-        <section class="category">
-            <h2>Христианство</h2>
-
-            <h3>Теология</h3>
-            <h4>Псалмы</h4>
-
-            <!-- «Псалм №124» -->
-            <div class="article">
-                <a href="https://write.as/gurov/psalom-124">Псалом №124</a>
-                <p>
-                    <div class="date">Краткое описание</div> 
-                        Пара слов про псалом 124: "Душа наша избавилась, как птица из сети ловящих". 
-                    <div class="date">Источники</div>
-                    • Komentáre k Starému zákonu 9. Žalmy 120 – 150. Kolektív autorov vedený Petrom Dubovským. Dobrá kniha Trnava 2021. ISBN 978-80-8191-308-2.<br>
-                    • Youtube: "SLAVNOSŤ PONTÍFIKANLNEJ TV NOE | | Beatifikácia Jana Havlíka, Šastine | 31.08.2024"
-               </p>
-                <p class="date">Дата публикации: 27 ноября 2024</p>
-            </div>
-            <!--END ARTICLE -->   
-
-
-
-
-
-            
-            <h3>Рождество</h3>
-
-            <!-- Огонек из Вифлеема -->
-            <div class="article">
-                <a href="https://write.as/gurov/ogonek-iz-vifleema">Огонек из Вифлеема</a>
-                <p>
-                    <div class="date">Краткое описание</div> 
-                    Все мы, говорящие по-русски, слышали и знаем о Благодатном огне, который выносят из Иерусалимского храма Гроба Господня в канун православной Пасхи. 
-                    Однако, вероятно, мало кто знает об относительно недавно возрождённой в Европе традиции распространения «Вифлеемского огня», 
-                    которой на сегодняшний день уже более 30 лет.
-                    <div class="date">Источники</div>
-                        • www.rsi.rtvs.sk/russkiy/clanky/tema-dnya/277204/vifleemskiy-ogony-simvol-nadezhdy-lyubvi-i-dobra<br>
-                        • Katolícke noviny, № 51/52, 2024<br>
-                        • www.betlehemskesvetlo.sk<br>
-                        • www.skaut.sk/akcia/32769/napinavy-suboj-kaktusky-si-vydobyli-prvenstvo
-               </p>
-                <p class="date">Дата публикации: 19 декабря 2024</p>
-            </div>
-            <!--END ARTICLE -->
-
-            <!-- «Человек, который изобрёл Рождество» -->
-            <div class="article">
-                <a href="https://write.as/gurov/snezhnaia-koroleva">Снежная королева</a>
-                <p>
-                    <div class="date">Краткое описание</div> 
-                    В воскресенье началась вторая адвентная неделя. На этой неделе в католической церкви отмечают приход Иоанна Крестителя, который призывает нас к покаянию.
-                    Что значит каяться? Возможно, это значит привести в порядок свою совесть. Но здесь возникает философский вопрос: что такое совесть, 
-                    как её можно настроить, и главное — на что её ориентировать?
-                    Как и обещал в прошлый раз, я хотел бы обратиться к тексту Ганса Христиана Андерсена — к сказке «Снежная королева».
-                    <div class="date">Источники</div>
-                    По мотивам лекций проф. А. Баумейстера и книги "Jezuliatko opäť prichádza", Viliam Judák.
-               </p>
-                <p class="date">Дата публикации: 11 декабря 2024</p>
-            </div>
-            <!--END ARTICLE -->
-
-            <!-- «Человек, который изобрёл Рождество» -->
-            <div class="article">
-                <a href="https://write.as/gurov/chelovek-kotoryi-izobriol-rozhdestvo">«Человек, который изобрёл Рождество»</a>
-                <p>
-                    <div class="date">Краткое описание</div> 
-                    Рождество – это не только традиции, но и литература, которая во многом формировала современное восприятие праздника. 
-                    Одним из ключевых творцов рождественского духа стал Чарльз Диккенс – создатель жанра рождественской истории. Его произведения мы перечитываем и пересматриваем из года в год.
-                    <div class="date">Источники</div>
-                    По мотивам лекций проф. А. Баумейстера и книги "Jezuliatko opäť prichádza", Viliam Judák.
-               </p>
-                <p class="date">Дата публикации: 2 декабря 2024</p>
-            </div>
-            <!--END ARTICLE -->
-
-             <!-- Первая неделя адвента -->
-            <div class="article">
-                <a href="https://write.as/gurov/zhdem-advent">Первая неделя адвента</a>
-                <p>
-                    <div class="date">Краткое описание</div> 
-                        Конец ноября — время, когда Европа начинает готовиться к Рождеству, без преувеличения самому долгожданному и популярному празднику.
-                        Каждую неделю адвента я буду публиковать текст, посвящённый Рождеству, чтобы приблизить моим читателям христианское, европейское и, в частности, словацкое понимание этого праздника.
-                        Эта статья служит введением, в котором я постараюсь описать своё видение этого праздника и его значение.
-                    <div class="date">Источники</div>
-                    Книга "Jezuliatko opäť prichádza", Viliam Judák.
-                </p>
-                <p class="date">Дата публикации: 25 ноября 2024</p>
-            </div>
-            <!--END ARTICLE -->
-                      
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Дневник размышлений MG</p>
+    <footer>     
+        <a href="https://t.me/gurovmichal"><img src="https://www.svgrepo.com/show/446809/telegram-alt.svg" alt="Telegram"></a>
+        <a href="mailto:gurov.michal@gmail.com"><img src="https://www.svgrepo.com/show/511917/email-1572.svg" alt="Email"></a>
     </footer>
 </body>
 </html>
