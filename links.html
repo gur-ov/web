@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
+    <title>Контакты - Михаил Гуров</title>
     <style>
         body {
             margin: 0;
@@ -13,159 +13,158 @@
             background-color: #f9f9f9;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
             min-height: 100vh;
         }
 
         header {
             text-align: center;
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #eaeaea;
-            width: 100%;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
         }
 
-        header .logo-placeholder {
-            width: 150px;
-            height: 150px;
-            border: 1px solid #aaa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto 20px;
-            font-size: 0.9rem;
+        header h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        header h1 a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        header h1 a:hover {
             color: #555;
+        }
+
+        header p {
+            font-style: italic;
+            margin: 5px 0 0;
+            font-size: 1rem;
         }
 
         nav {
             display: flex;
             justify-content: center;
             gap: 20px;
-            background-color: #ddd;
-            padding: 10px;
-            width: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
         }
 
         nav a {
             text-decoration: none;
             font-size: 1rem;
             color: #333;
-            transition: color 0.3s ease;
+            border-bottom: 1px solid #333;
+            transition: color 0.3s ease, border-color 0.3s ease;
         }
 
         nav a:hover {
             color: #555;
+            border-color: #555;
         }
 
-        section {
+        main {
+            flex: 1;
             padding: 20px;
             max-width: 800px;
-            width: 100%;
+            margin: 0 auto;
         }
 
-        section h2 {
+        h2 {
             font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
             margin-bottom: 15px;
+            line-height: 1.6;
         }
 
-        section p, section a {
-            font-size: 1rem;
-            margin: 10px 0;
-            line-height: 1.5;
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
             color: #333;
+            transition: color 0.3s ease;
         }
 
-        section a {
-            text-decoration: underline;
+        ul li a:hover {
+            color: #555;
         }
 
         footer {
-            margin-top: auto;
-            padding: 10px;
-            background-color: #eaeaea;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        footer a {
-            width: 24px;
-            height: 24px;
-            display: inline-block;
-            transition: color 0.3s ease, border-color 0.3s ease;
-        }
-
-        footer a img {
-            width: 100%;
-            height: auto;
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-        }
-
-        footer a:hover img {
-            filter: grayscale(0%);
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+            color: #777;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo-placeholder">
-            <img src="./img/pr.png" alt="Фото профиля" style="width: 100px; height: auto; margin-right: 10px;">
-        </div>
+        <h1><a href="index.html">Михаил Гуров</a></h1>
+        <p>Контакты и полезные ссылки</p>
     </header>
     <nav>
-        <a href="#contacts">Контакты</a>
-        <a href="#secret">Secret Bratislava</a>
-        <a href="#shop">Obchod v muzeu</a>
-        <a href="#friends">Друзья</a>
-        <a href="#recommendations">Рекомендации</a>
+        <a href="index.html">Главная</a>
     </nav>
-    <section id="contacts">
+    <main>
         <h2>Мои контакты</h2>
-        <p>○ <a href="https://t.me/gurov_michal">Группа в Telegram</a></p>
-        <p>○ <a href="https://t.me/gurovmichal">Личный аккаунт Telegram</a></p>
-        <p>○ <a href="mailto:gurov.michal@gmail.com">e-mail</a>: gurov.michal@gmail.com</p>
-        <p>○ <a href="https://write.as/gurov/">Мои статьи на write.as</a></p>
-    </section>
+        <ul>
+            <li><a href="https://t.me/gurov_michal">Группа в Telegram</a></li>
+            <li><a href="https://t.me/gurovmichal">Личный аккаунт Telegram</a></li>
+            <li><a href="mailto:gurov.michal@gmail.com">e-mail</a>: gurov.michal@gmail.com</li>
+            <li><a href="https://write.as/gurov/">Мои статьи на write.as</a></li>
+        </ul>
 
-    <section id="secret">
         <h2>Проект SecretBratislava</h2>
-        <p>• <a href="https://SecretBratislava.com">Официальный сайт</a></p>
-        <p>• <a href="https://t.me/secret_bratislava">Telegram</a></p>
-        <p>• <a href="https://www.facebook.com/p/Secret-Bratislava-100056245966277/">Facebook</a></p>
-        <p>• <a href="https://www.instagram.com/secret_bratislava/">Instagram</a></p>
-        <p>О чудесах и секретах Братиславы и Словакии, явных и спрятанных.<br>
-        Автор - Наталья Замятина, гид в Братиславе.</p>
-    </section>
+        <ul>
+            <li><a href="https://SecretBratislava.com">Официальный сайт</a></li>
+            <li><a href="https://t.me/secret_bratislava">Telegram</a></li>
+            <li><a href="https://www.facebook.com/p/Secret-Bratislava-100056245966277/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/secret_bratislava/">Instagram</a></li>
+        </ul>
+        <p>
+            О чудесах и секретах Братиславы и Словакии, явных и спрятанных.<br>
+            Автор - Наталья Замятина, гид в Братиславе.
+        </p>
 
-    <section id="shop">
         <h2>Obchod v muzeu na biela 6</h2>
-        <p>• <a href="https://muzeumobchodu.sk/muzeum/expozicia/the-oldest-shop-in-town/">Информационный сайт</a></p>
-        <p>• <a href="https://www.facebook.com/obchodvmuzeu/">Facebook</a></p>
-        <p>Небольшой магазин в историческом центре Братиславы, 
-        совмещённый с музеем торговли в стиле старинных колониальных магазинов ушедшей эпохи. 
-        Здесь можно найти сувениры ручной работы словацких мастеров, вина от местных виноделов и многое другое.<br>
-        <b>Адрес:</b> Obchod v múzeu, Biela 6, Bratislava, Staré Mesto.<br>
-        А также небольшое рекламное <a href="https://www.youtube.com/watch?v=_Zj_jmpIdEg">видео по ссылке</a>.</p>
-    </section>
+        <ul>
+            <li><a href="https://muzeumobchodu.sk/muzeum/expozicia/the-oldest-shop-in-town/">Информационный сайт</a></li>
+            <li><a href="https://www.facebook.com/obchodvmuzeu/">Facebook</a></li>
+        </ul>
+        <p>
+            Небольшой магазин в историческом центре Братиславы, 
+            совмещённый с музеем торговли в стиле старинных колониальных магазинов ушедшей эпохи. 
+            Здесь можно найти сувениры ручной работы словацких мастеров, вина от местных виноделов и многое другое.<br>
+            <b>Адрес:</b> Obchod v múzeu, Biela 6, Bratislava, Staré Mesto.<br>
+            А также небольшое рекламное <a href="https://www.youtube.com/watch?v=_Zj_jmpIdEg">видео по ссылке</a>.
+        </p>
 
-    <section id="friends">
         <h2>Друзья</h2>
-        <p>Литературное творчество <a href="https://proza.ru/avtor/opritov"> Элинара Мифоградского</a></p>
-    </section>
+        <p>
+            Литературное творчество <a href="https://proza.ru/avtor/opritov">Элинара Мифоградского</a>
+        </p>
 
-    <section id="recommendations">
         <h2>Рекомендации</h2>
-        <p>Проект фолковых музыкальных сборников "Музыка Леса" издательства "Мифоград". В 2014 году у них вышел сборник с названием:<br>
-        "Сборник - Музыка Леса - Лучшее [6 CD] (2014) FLAC, MP3 от Мифоград".<br>
-        Если ввести это название в поиск Яндекса, можно будет легко найти сам сборник.</p>
-    </section>
-    <footer>     
-        <a href="https://t.me/gurovmichal"><img src="https://www.svgrepo.com/show/446809/telegram-alt.svg" alt="Telegram"></a>
-        <a href="mailto:gurov.michal@gmail.com"><img src="https://www.svgrepo.com/show/511917/email-1572.svg" alt="Email"></a>
+        <p>
+            Проект фолковых музыкальных сборников "Музыка Леса" издательства "Мифоград". В 2014 году у них вышел сборник с названием:<br>
+            "Сборник - Музыка Леса - Лучшее [6 CD] (2014) FLAC, MP3 от Мифоград".<br>
+            Если ввести это название в поиск Яндекса, можно будет легко найти сам сборник.
+        </p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Михаил Гуров</p>
     </footer>
 </body>
 </html>
