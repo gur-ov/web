@@ -1,40 +1,155 @@
-    <h2>Мои контакты</h2>
-            <p>○ <a href="https://t.me/gurov_michal">Группа в Telegram</a></p>
-            <p>○ <a href="https://t.me/gurovmichal">Личный аккаунт Telegram</a></p>
-            <p>○ <a href="mailto:gurov.michal@gmail.com">e-mail</a>: gurov.michal@gmail.com</p>
-            <p>○ <a href="https://write.as/gurov/">Мои статьи на write.as</a></p>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Михаил Гуров</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Georgia", serif;
+            color: #333;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-<h2>Проект SecretBratislava</h2>
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-                • <a href="https://SecretBratislava.com">Официальный сайт</a><br>
-                • <a href="https://t.me/secret_bratislava">Telegram</a><br>
-                • <a href="https://www.facebook.com/p/Secret-Bratislava-100056245966277/">Facebook</a><br>
-                • <a href="https://www.instagram.com/secret_bratislava/">Instagram</a>
-                <p>
-                    О чудесах и секретах Братиславы и Словакии, явных и спрятанных.<br>
-                    Автор - Наталья Замятина, гид в Братиславе.
-                </p>
+        header .logo-placeholder {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #aaa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px;
+            font-size: 0.9rem;
+            color: #555;
+        }
 
-            <h2>Obchod v muzeu na biela 6</h2>
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
-                • <a href="https://muzeumobchodu.sk/muzeum/expozicia/the-oldest-shop-in-town/">Информационный сайт</a><br>
-                • <a href="https://www.facebook.com/obchodvmuzeu/">Facebook</a>
-                <p>
-                    Небольшой магазин в историческом центре Братиславы, 
-                    совмещённый с музеем торговли в стиле старинных колониальных магазинов ушедшей эпохи. 
-                    Здесь можно найти сувениры ручной работы словацких мастеров, вина от местных виноделов и многое другое.<br>
-                    <b>Адрес:</b> Obchod v múzeu, Biela 6, Bratislava, Staré Mesto.<br>
-                    А также небольшое рекламное <a href="https://www.youtube.com/watch?v=_Zj_jmpIdEg">видео по ссылке</a>.
-                </p>
-       
-            <h2>Друзья</h2>
-                <p>
-                    Литературное творчество <a href="https://proza.ru/avtor/opritov"> Элинара Мифоградского</a>
-                </p>
+        nav a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #333;
+            border-bottom: 1px solid #333;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
 
-            <h2>Рекомендации</h2>
-                <p>
-                    Проект фолковых музыкальных сборников "Музыка Леса" издательства "Мифоград". В 2014 году у них вышел сборник с названием:<br>
-                    "Сборник - Музыка Леса - Лучшее [6 CD] (2014) FLAC, MP3 от Мифоград".<br>
-                    Если ввести это название в поиск Яндекса, можно будет легко найти сам сборник.
-                </p>
+        nav a:hover {
+            color: #555;
+            border-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        section p, section a {
+            font-size: 1rem;
+            margin: 10px 0;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        section a {
+            text-decoration: underline;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        footer a {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        footer a img {
+            width: 100%;
+            height: auto;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        footer a:hover img {
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-placeholder">
+            <img src="./img/pr.png" alt="Фото профиля" style="width: 100px; height: auto; margin-right: 10px;">
+        </div>
+    </header>
+    <nav>
+        <a href="#philosophy">Тексты</a>
+        <a href="#sommelier">Вино</a>
+        <a href="#radio">Радио</a>
+        <a href="#philately">Филателия</a>
+        <a href="#links">Контакты</a>
+    </nav>
+    <section id="links">
+        <h2>Мои контакты</h2>
+        <p>○ <a href="https://t.me/gurov_michal">Группа в Telegram</a></p>
+        <p>○ <a href="https://t.me/gurovmichal">Личный аккаунт Telegram</a></p>
+        <p>○ <a href="mailto:gurov.michal@gmail.com">e-mail</a>: gurov.michal@gmail.com</p>
+        <p>○ <a href="https://write.as/gurov/">Мои статьи на write.as</a></p>
+
+        <h2>Проект SecretBratislava</h2>
+        <p>• <a href="https://SecretBratislava.com">Официальный сайт</a></p>
+        <p>• <a href="https://t.me/secret_bratislava">Telegram</a></p>
+        <p>• <a href="https://www.facebook.com/p/Secret-Bratislava-100056245966277/">Facebook</a></p>
+        <p>• <a href="https://www.instagram.com/secret_bratislava/">Instagram</a></p>
+        <p>О чудесах и секретах Братиславы и Словакии, явных и спрятанных.<br>
+        Автор - Наталья Замятина, гид в Братиславе.</p>
+
+        <h2>Obchod v muzeu na biela 6</h2>
+        <p>• <a href="https://muzeumobchodu.sk/muzeum/expozicia/the-oldest-shop-in-town/">Информационный сайт</a></p>
+        <p>• <a href="https://www.facebook.com/obchodvmuzeu/">Facebook</a></p>
+        <p>Небольшой магазин в историческом центре Братиславы, 
+        совмещённый с музеем торговли в стиле старинных колониальных магазинов ушедшей эпохи. 
+        Здесь можно найти сувениры ручной работы словацких мастеров, вина от местных виноделов и многое другое.<br>
+        <b>Адрес:</b> Obchod v múzeu, Biela 6, Bratislava, Staré Mesto.<br>
+        А также небольшое рекламное <a href="https://www.youtube.com/watch?v=_Zj_jmpIdEg">видео по ссылке</a>.</p>
+
+        <h2>Друзья</h2>
+        <p>Литературное творчество <a href="https://proza.ru/avtor/opritov"> Элинара Мифоградского</a></p>
+
+        <h2>Рекомендации</h2>
+        <p>Проект фолковых музыкальных сборников "Музыка Леса" издательства "Мифоград". В 2014 году у них вышел сборник с названием:<br>
+        "Сборник - Музыка Леса - Лучшее [6 CD] (2014) FLAC, MP3 от Мифоград".<br>
+        Если ввести это название в поиск Яндекса, можно будет легко найти сам сборник.</p>
+    </section>
+    <footer>     
+        <a href="https://t.me/gurovmichal"><img src="https://www.svgrepo.com/show/446809/telegram-alt.svg" alt="Telegram"></a>
+        <a href="mailto:gurov.michal@gmail.com"><img src="https://www.svgrepo.com/show/511917/email-1572.svg" alt="Email"></a>
+    </footer>
+</body>
+</html>
