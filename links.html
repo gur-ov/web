@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Михаил Гуров</title>
+    <title>Контакты</title>
     <style>
         body {
             margin: 0;
@@ -13,14 +13,17 @@
             background-color: #f9f9f9;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             min-height: 100vh;
         }
 
         header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #eaeaea;
+            width: 100%;
         }
 
         header .logo-placeholder {
@@ -37,27 +40,29 @@
 
         nav {
             display: flex;
-            flex-direction: column;
-            gap: 15px;
+            justify-content: center;
+            gap: 20px;
+            background-color: #ddd;
+            padding: 10px;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: #333;
-            border-bottom: 1px solid #333;
-            transition: color 0.3s ease, border-color 0.3s ease;
+            transition: color 0.3s ease;
         }
 
         nav a:hover {
             color: #555;
-            border-color: #555;
         }
 
         section {
             padding: 20px;
             max-width: 800px;
-            margin: 0 auto;
+            width: 100%;
         }
 
         section h2 {
@@ -77,9 +82,12 @@
         }
 
         footer {
-            position: absolute;
-            bottom: 20px;
+            margin-top: auto;
+            padding: 10px;
+            background-color: #eaeaea;
+            width: 100%;
             display: flex;
+            justify-content: center;
             gap: 10px;
         }
 
@@ -109,19 +117,21 @@
         </div>
     </header>
     <nav>
-        <a href="#philosophy">Тексты</a>
-        <a href="#sommelier">Вино</a>
-        <a href="#radio">Радио</a>
-        <a href="#philately">Филателия</a>
-        <a href="#links">Контакты</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#secret">Secret Bratislava</a>
+        <a href="#shop">Obchod v muzeu</a>
+        <a href="#friends">Друзья</a>
+        <a href="#recommendations">Рекомендации</a>
     </nav>
-    <section id="links">
+    <section id="contacts">
         <h2>Мои контакты</h2>
         <p>○ <a href="https://t.me/gurov_michal">Группа в Telegram</a></p>
         <p>○ <a href="https://t.me/gurovmichal">Личный аккаунт Telegram</a></p>
         <p>○ <a href="mailto:gurov.michal@gmail.com">e-mail</a>: gurov.michal@gmail.com</p>
         <p>○ <a href="https://write.as/gurov/">Мои статьи на write.as</a></p>
+    </section>
 
+    <section id="secret">
         <h2>Проект SecretBratislava</h2>
         <p>• <a href="https://SecretBratislava.com">Официальный сайт</a></p>
         <p>• <a href="https://t.me/secret_bratislava">Telegram</a></p>
@@ -129,7 +139,9 @@
         <p>• <a href="https://www.instagram.com/secret_bratislava/">Instagram</a></p>
         <p>О чудесах и секретах Братиславы и Словакии, явных и спрятанных.<br>
         Автор - Наталья Замятина, гид в Братиславе.</p>
+    </section>
 
+    <section id="shop">
         <h2>Obchod v muzeu na biela 6</h2>
         <p>• <a href="https://muzeumobchodu.sk/muzeum/expozicia/the-oldest-shop-in-town/">Информационный сайт</a></p>
         <p>• <a href="https://www.facebook.com/obchodvmuzeu/">Facebook</a></p>
@@ -138,10 +150,14 @@
         Здесь можно найти сувениры ручной работы словацких мастеров, вина от местных виноделов и многое другое.<br>
         <b>Адрес:</b> Obchod v múzeu, Biela 6, Bratislava, Staré Mesto.<br>
         А также небольшое рекламное <a href="https://www.youtube.com/watch?v=_Zj_jmpIdEg">видео по ссылке</a>.</p>
+    </section>
 
+    <section id="friends">
         <h2>Друзья</h2>
         <p>Литературное творчество <a href="https://proza.ru/avtor/opritov"> Элинара Мифоградского</a></p>
+    </section>
 
+    <section id="recommendations">
         <h2>Рекомендации</h2>
         <p>Проект фолковых музыкальных сборников "Музыка Леса" издательства "Мифоград". В 2014 году у них вышел сборник с названием:<br>
         "Сборник - Музыка Леса - Лучшее [6 CD] (2014) FLAC, MP3 от Мифоград".<br>
