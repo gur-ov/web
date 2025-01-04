@@ -1,1 +1,165 @@
-.
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вино - Михаил Гуров</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Georgia", serif;
+            color: #333;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        header h1 a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        header h1 a:hover {
+            color: #555;
+        }
+
+        header p {
+            font-style: italic;
+            margin: 5px 0 0;
+            font-size: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #333;
+            border-bottom: 1px solid #333;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #555;
+            border-color: #555;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin: 15px 0 5px;
+        }
+
+        .article {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .article h4 {
+            margin-bottom: 15px;
+        }
+
+        .metadata {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .metadata span {
+            display: block;
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-bottom: 3px;
+        }
+
+        .metadata p {
+            margin: 5px 0 10px;
+        }
+
+        .metadata ol {
+            margin: 5px 0 10px;
+            padding-left: 20px;
+            color: #555;
+        }
+
+        .metadata ol li {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Михаил Гуров</a></h1>
+        <p>Лето, виноградники, вино</p>
+    </header>
+    <nav>
+        <a href="#theology">Вино</a>
+    </nav>
+    <main>
+        <h2 id="theology">Вино</h2>
+
+        <h3>Вино</h3>
+        
+        <div class="article">
+            <h4><a href="https://" target="_blank">Заметка про вино</a></h4>
+            <div class="metadata">
+                <span>Аннотация:</span>
+                <p>Пара слов про вино.</p>
+                <span>Источники:</span>
+                <ol>
+                    <li>Разные источники.</li>
+                </ol>
+                <span>Дата:</span>
+                <p>27 ноября 2024</p>
+            </div>
+        </div>
+
+     
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Михаил Гуров</p>
+    </footer>
+</body>
+</html>
