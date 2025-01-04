@@ -67,34 +67,46 @@
         main {
             flex: 1;
             padding: 20px;
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        h3 {
-            font-size: 1.2rem;
-            margin: 15px 0 5px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
 
         .article {
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #ddd;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .article h4 {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .article h4 a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .article h4 a:hover {
+            color: #555;
         }
 
         .metadata {
-            margin-top: 10px;
             font-size: 0.9rem;
             color: #555;
+            margin-top: 10px;
         }
 
         .metadata span {
@@ -137,10 +149,6 @@
         <a href="#mark">Вино</a>
     </nav>
     <main>
-        <h2 id="mark">Вино</h2>
-
-        <h3>Вино</h3>
-        
         <div class="article">
             <h4><a href="https://" target="_blank">Заметка про вино</a></h4>
             <div class="metadata">
@@ -155,8 +163,19 @@
             </div>
         </div>
 
-     
-
+        <div class="article">
+            <h4><a href="https://" target="_blank">Заметка про виноделие</a></h4>
+            <div class="metadata">
+                <span>Аннотация:</span>
+                <p>Немного о процессе виноделия.</p>
+                <span>Источники:</span>
+                <ol>
+                    <li>Книги о виноделии.</li>
+                </ol>
+                <span>Дата:</span>
+                <p>28 ноября 2024</p>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Михаил Гуров</p>
