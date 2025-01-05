@@ -69,9 +69,13 @@
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
+        }
+
+        .articles {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
+            margin-top: 20px;
         }
 
         .article {
@@ -154,13 +158,13 @@
         }
 
         @media (max-width: 768px) {
-            main {
+            .articles {
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             }
         }
 
         @media (max-width: 480px) {
-            main {
+            .articles {
                 grid-template-columns: 1fr;
             }
         }
@@ -179,73 +183,75 @@
 
         <h2 id="wineshops">Винотеки</h2>
 
-        <div class="article">
-            <h4><a href="https://" target="_blank">Заметка про вино</a></h4>
-            <div class="metadata">
-                <span>Аннотация:</span>
-                <p>Пара слов про вино.</p>
-                <span>Источники:</span>
-                <ol>
-                    <li>Разные источники.</li>
-                </ol>
-                <span>Дата:</span>
-                <p>27 ноября 2024</p>
+        <div class="articles">
+            <div class="article">
+                <h4><a href="https://" target="_blank">Заметка про вино</a></h4>
+                <div class="metadata">
+                    <span>Аннотация:</span>
+                    <p>Пара слов про вино.</p>
+                    <span>Источники:</span>
+                    <ol>
+                        <li>Разные источники.</li>
+                    </ol>
+                    <span>Дата:</span>
+                    <p>27 ноября 2024</p>
+                </div>
             </div>
-        </div>
 
-        <div class="article">
-            <h4><a href="https://" target="_blank">Заметка про виноделие</a></h4>
-            <div class="metadata">
-                <span>Аннотация:</span>
-                <p>Немного о процессе виноделия.</p>
-                <span>Источники:</span>
-                <ol>
-                    <li>Книги о виноделии.</li>
-                </ol>
-                <span>Дата:</span>
-                <p>28 ноября 2024</p>
+            <div class="article">
+                <h4><a href="https://" target="_blank">Заметка про виноделие</a></h4>
+                <div class="metadata">
+                    <span>Аннотация:</span>
+                    <p>Немного о процессе виноделия.</p>
+                    <span>Источники:</span>
+                    <ol>
+                        <li>Книги о виноделии.</li>
+                    </ol>
+                    <span>Дата:</span>
+                    <p>28 ноября 2024</p>
+                </div>
             </div>
-        </div>
 
-        <div class="article">
-            <h4><a href="https://" target="_blank">Заметка про сорта винограда</a></h4>
-            <div class="metadata">
-                <span>Аннотация:</span>
-                <p>Описание популярных сортов винограда.</p>
-                <span>Источники:</span>
-                <ol>
-                    <li>Справочники по сортам винограда.</li>
-                </ol>
-                <span>Дата:</span>
-                <p>29 ноября 2024</p>
+            <div class="article">
+                <h4><a href="https://" target="_blank">Заметка про сорта винограда</a></h4>
+                <div class="metadata">
+                    <span>Аннотация:</span>
+                    <p>Описание популярных сортов винограда.</p>
+                    <span>Источники:</span>
+                    <ol>
+                        <li>Справочники по сортам винограда.</li>
+                    </ol>
+                    <span>Дата:</span>
+                    <p>29 ноября 2024</p>
+                </div>
             </div>
-        </div>
 
-        <div class="article">
-            <h4><a href="https://" target="_blank">История виноделия</a></h4>
-            <div class="metadata">
-                <span>Аннотация:</span>
-                <p>Эволюция виноделия с древности до наших дней.</p>
-                <span>Источники:</span>
-                <ol>
-                    <li>Книги по истории виноделия.</li>
-                </ol>
-                <span>Дата:</span>
-                <p>30 ноября 2024</p>
+            <div class="article">
+                <h4><a href="https://" target="_blank">История виноделия</a></h4>
+                <div class="metadata">
+                    <span>Аннотация:</span>
+                    <p>Эволюция виноделия с древности до наших дней.</p>
+                    <span>Источники:</span>
+                    <ol>
+                        <li>Книги по истории виноделия.</li>
+                    </ol>
+                    <span>Дата:</span>
+                    <p>30 ноября 2024</p>
+                </div>
             </div>
-        </div>
 
-        <div class="article">
-            <h4><a href="https://" target="_blank">Современные технологии в виноделии</a></h4>
-            <div class="metadata">
-                <span>Аннотация:</span>
-                <p>Как современные технологии изменили виноделие.</p>
-                <span>Источники:</span>
-                <ol>
-                    <li>Научные статьи о виноделии.</li>
-                </ol>
-                <span>Дата:</span>
-                <p>1 декабря 2024</p>
+            <div class="article">
+                <h4><a href="https://" target="_blank">Современные технологии в виноделии</a></h4>
+                <div class="metadata">
+                    <span>Аннотация:</span>
+                    <p>Как современные технологии изменили виноделие.</p>
+                    <span>Источники:</span>
+                    <ol>
+                        <li>Научные статьи о виноделии.</li>
+                    </ol>
+                    <span>Дата:</span>
+                    <p>1 декабря 2024</p>
+                </div>
             </div>
         </div>
     </main>
