@@ -47,6 +47,12 @@
             color: #777;
         }
 
+        header .subtitle {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
+
         nav {
             display: flex;
             justify-content: center;
@@ -54,6 +60,9 @@
             padding: 15px 0;
             background-color: #ffffff;
             border-bottom: 2px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
@@ -118,18 +127,13 @@
             padding: 20px;
             background-color: #fbfbfb;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: box-shadow 0.3s ease;
-        }
-
-        .article:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .article h4 {
             margin: 0 0 15px;
             font-size: 1.2rem;
-            color: #2c2c2c;
+            color: #0073e6;
         }
 
         .article h4 a {
@@ -139,7 +143,7 @@
         }
 
         .article:hover h4 a {
-            color: #0073e6;
+            color: #005bb5;
         }
 
         .article:hover::after {
@@ -148,7 +152,7 @@
             left: 0;
             bottom: 0;
             width: 100%;
-            height: 3px;
+            height: 2px;
             background-color: #0073e6;
         }
 
@@ -180,6 +184,30 @@
             font-size: 0.9rem;
         }
 
+        .slider {
+            position: relative;
+            margin-bottom: 30px;
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+            overflow: hidden;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .slider img.active {
+            opacity: 1;
+        }
+
         footer {
             text-align: center;
             padding: 20px 0;
@@ -199,22 +227,66 @@
             .articles {
                 grid-template-columns: 1fr;
             }
+
+            .slider {
+                display: none;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1><a href="index.html">Михаил Гуров</a></h1>
-        <p>О вине и виноделии в Словакии на русском языке</p>
+        <p>Путешествие по миру виноделия</p>
+        <p class="subtitle">О вине и виноделии в Словакии на русском языке</p>
     </header>
     <nav>
-        <a href="#wineshops">Винотеки</a>
         <a href="#wine">Вино</a>
+        <a href="#wineshops">Винотеки</a>
+        <a href="#winemakers">Виноделы</a>
         <a href="#grape">Виноград</a>
     </nav>
     <main>
+        <div class="slider">
+            <img src="slider1.jpg" alt="Слайд 1" class="active">
+            <img src="slider2.jpg" alt="Слайд 2">
+            <img src="slider3.jpg" alt="Слайд 3">
+        </div>
+
         <div class="announcement">
             Если вас интересует винная экскурсия, сопровождение или услуги сомелье, пожалуйста, обратитесь к разделу <a href="#">"Экскурсии"</a> через главное меню сайта.
+        </div>
+
+        <h2 id="wine">Вино</h2>
+
+        <div class="articles">
+            <div class="article">
+                <h4><a href="https://" target="_blank">История виноделия</a></h4>
+                <div class="metadata">
+                    <span>Аннотация:</span>
+                    <p>Эволюция виноделия с древности до наших дней.</p>
+                    <span>Источники:</span>
+                    <ol>
+                        <li>Книги по истории виноделия.</li>
+                    </ol>
+                    <span>Дата:</span>
+                    <p>30 ноября 2024</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <h4><a href="https://" target="_blank">Современные технологии в виноделии</a></h4>
+                <div class="metadata">
+                    <span>Аннотация:</span>
+                    <p>Как современные технологии изменили виноделие.</p>
+                    <span>Источники:</span>
+                    <ol>
+                        <li>Научные статьи о виноделии.</li>
+                    </ol>
+                    <span>Дата:</span>
+                    <p>1 декабря 2024</p>
+                </div>
+            </div>
         </div>
 
         <h2 id="wineshops">Винотеки</h2>
@@ -249,34 +321,34 @@
             </div>
         </div>
 
-        <h2 id="wine">Вино</h2>
+        <h2 id="winemakers">Виноделы</h2>
 
         <div class="articles">
             <div class="article">
-                <h4><a href="https://" target="_blank">История виноделия</a></h4>
+                <h4><a href="https://" target="_blank">Знаменитые виноделы мира</a></h4>
                 <div class="metadata">
                     <span>Аннотация:</span>
-                    <p>Эволюция виноделия с древности до наших дней.</p>
+                    <p>Биографии и достижения известных виноделов.</p>
                     <span>Источники:</span>
                     <ol>
-                        <li>Книги по истории виноделия.</li>
+                        <li>Книги и статьи о виноделах.</li>
                     </ol>
                     <span>Дата:</span>
-                    <p>30 ноября 2024</p>
+                    <p>15 декабря 2024</p>
                 </div>
             </div>
 
             <div class="article">
-                <h4><a href="https://" target="_blank">Современные технологии в виноделии</a></h4>
+                <h4><a href="https://" target="_blank">Современные мастера виноделия</a></h4>
                 <div class="metadata">
                     <span>Аннотация:</span>
-                    <p>Как современные технологии изменили виноделие.</p>
+                    <p>Инновационные подходы виноделов 21 века.</p>
                     <span>Источники:</span>
                     <ol>
-                        <li>Научные статьи о виноделии.</li>
+                        <li>Журналы о виноделии.</li>
                     </ol>
                     <span>Дата:</span>
-                    <p>1 декабря 2024</p>
+                    <p>20 декабря 2024</p>
                 </div>
             </div>
         </div>
@@ -316,5 +388,18 @@
     <footer>
         <p>&copy; 2025 Михаил Гуров</p>
     </footer>
+    <script>
+        // Слайдер
+        const slides = document.querySelectorAll('.slider img');
+        let currentSlide = 0;
+
+        function showNextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        setInterval(showNextSlide, 3000);
+    </script>
 </body>
 </html>
