@@ -71,6 +71,34 @@
             margin: 0 auto;
         }
 
+        .announcement {
+            background-color: #fff4e5;
+            border: 1px solid #ffd9b3;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: #7a4b00;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .announcement a {
+            color: #7a4b00;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        .announcement a:hover {
+            color: #aa6b00;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
         .articles {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -179,7 +207,9 @@
         <a href="#mark">Вино</a>
     </nav>
     <main>
-        <p>Если вас интересует винная экскурсия, сопровождение или услуги сомелье, пожалуйста, обратитесь к разделу "Экскурсии" через главное меню сайта.</p>
+        <div class="announcement">
+            Если вас интересует винная экскурсия, сопровождение или услуги сомелье, пожалуйста, обратитесь к разделу <a href="#">"Экскурсии"</a> через главное меню сайта.
+        </div>
 
         <h2 id="wineshops">Винотеки</h2>
 
