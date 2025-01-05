@@ -116,14 +116,13 @@
         .article {
             position: relative;
             padding: 20px;
-            background-color: #fff;
+            background-color: #fbfbfb;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: box-shadow 0.3s ease;
         }
 
         .article:hover {
-            transform: translateY(-5px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
@@ -141,6 +140,16 @@
 
         .article:hover h4 a {
             color: #0073e6;
+        }
+
+        .article:hover::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #0073e6;
         }
 
         .metadata {
@@ -199,7 +208,9 @@
         <p>Путешествие по миру виноделия</p>
     </header>
     <nav>
-        <a href="#mark">Вино</a>
+        <a href="#wineshops">Винотеки</a>
+        <a href="#wine">Вино</a>
+        <a href="#grape">Виноград</a>
     </nav>
     <main>
         <div class="announcement">
@@ -236,21 +247,11 @@
                     <p>28 ноября 2024</p>
                 </div>
             </div>
+        </div>
 
-            <div class="article">
-                <h4><a href="https://" target="_blank">Заметка про сорта винограда</a></h4>
-                <div class="metadata">
-                    <span>Аннотация:</span>
-                    <p>Описание популярных сортов винограда.</p>
-                    <span>Источники:</span>
-                    <ol>
-                        <li>Справочники по сортам винограда.</li>
-                    </ol>
-                    <span>Дата:</span>
-                    <p>29 ноября 2024</p>
-                </div>
-            </div>
+        <h2 id="wine">Вино</h2>
 
+        <div class="articles">
             <div class="article">
                 <h4><a href="https://" target="_blank">История виноделия</a></h4>
                 <div class="metadata">
@@ -276,6 +277,38 @@
                     </ol>
                     <span>Дата:</span>
                     <p>1 декабря 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="grape">Виноград</h2>
+
+        <div class="articles">
+            <div class="article">
+                <h4><a href="https://" target="_blank">Заметка про сорта винограда</a></h4>
+                <div class="metadata">
+                    <span>Аннотация:</span>
+                    <p>Описание популярных сортов винограда.</p>
+                    <span>Источники:</span>
+                    <ol>
+                        <li>Справочники по сортам винограда.</li>
+                    </ol>
+                    <span>Дата:</span>
+                    <p>29 ноября 2024</p>
+                </div>
+            </div>
+
+            <div class="article">
+                <h4><a href="https://" target="_blank">Редкие сорта винограда</a></h4>
+                <div class="metadata">
+                    <span>Аннотация:</span>
+                    <p>Исследование уникальных сортов винограда по всему миру.</p>
+                    <span>Источники:</span>
+                    <ol>
+                        <li>Научные журналы о виноградарстве.</li>
+                    </ol>
+                    <span>Дата:</span>
+                    <p>2 декабря 2024</p>
                 </div>
             </div>
         </div>
