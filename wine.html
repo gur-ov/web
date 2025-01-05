@@ -75,31 +75,45 @@
         }
 
         .article {
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            padding: 20px;
+            background-color: transparent;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .article::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            width: 80%;
+            height: 2px;
+            background-color: #ddd;
+            transition: background-color 0.3s ease;
+        }
+
+        .article:hover::after {
+            background-color: #555;
         }
 
         .article:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: #555;
         }
 
         .article h4 {
-            margin-bottom: 10px;
+            margin: 0 0 10px;
             font-size: 1.1rem;
         }
 
         .article h4 a {
             text-decoration: none;
-            color: #333;
+            color: inherit;
+            display: block;
             transition: color 0.3s ease;
         }
 
-        .article h4 a:hover {
+        .article:hover h4 a {
             color: #555;
         }
 
@@ -158,17 +172,13 @@
         <p>...</p>
     </header>
     <nav>
-        <a href="#wineshops">Винотеки</a>
-        <a href="#grape">Виноград</a>
-        <a href="#wine">Вино</a>
-        
+        <a href="#mark">Вино</a>
     </nav>
     <main>
-
         <p>Если вас интересует винная экскурсия, сопровождение или услуги сомелье, пожалуйста, обратитесь к разделу "Экскурсии" через главное меню сайта.</p>
 
         <h2 id="wineshops">Винотеки</h2>
-        
+
         <div class="article">
             <h4><a href="https://" target="_blank">Заметка про вино</a></h4>
             <div class="metadata">
@@ -197,36 +207,6 @@
             </div>
         </div>
 
-                <div class="article">
-            <h4><a href="https://" target="_blank">Заметка про виноделие</a></h4>
-            <div class="metadata">
-                <span>Аннотация:</span>
-                <p>Немного о процессе виноделия.</p>
-                <span>Источники:</span>
-                <ol>
-                    <li>Книги о виноделии.</li>
-                </ol>
-                <span>Дата:</span>
-                <p>28 ноября 2024</p>
-            </div>
-        </div>
-
-                <div class="article">
-            <h4><a href="https://" target="_blank">Заметка про виноделие</a></h4>
-            <div class="metadata">
-                <span>Аннотация:</span>
-                <p>Немного о процессе виноделия.</p>
-                <span>Источники:</span>
-                <ol>
-                    <li>Книги о виноделии.</li>
-                </ol>
-                <span>Дата:</span>
-                <p>28 ноября 2024</p>
-            </div>
-        </div>
-        
-<h2 id="grape">Виноград</h2>
-        
         <div class="article">
             <h4><a href="https://" target="_blank">Заметка про сорта винограда</a></h4>
             <div class="metadata">
@@ -255,8 +235,6 @@
             </div>
         </div>
 
-        <h2 id="wine">Вино</h2>
-        
         <div class="article">
             <h4><a href="https://" target="_blank">Современные технологии в виноделии</a></h4>
             <div class="metadata">
