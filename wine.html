@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вино - Михаил Гуров</title>
     <style>
+        :root {
+            --primary-color: #0073e6;
+            --secondary-color: #005bb5;
+            --background-color: #f5f5f5;
+            --text-color: #2c2c2c;
+            --light-background: #fafafa;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
         body {
             margin: 0;
             padding: 0;
             font-family: "Georgia", serif;
-            color: #2c2c2c;
-            background-color: #f5f5f5;
+            color: var(--text-color);
+            background-color: var(--background-color);
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -19,15 +29,15 @@
         header {
             text-align: center;
             padding: 30px 0;
-            background-color: #fafafa;
-            border-bottom: 2px solid #e0e0e0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: var(--light-background);
+            border-bottom: 2px solid var(--border-color);
+            box-shadow: 0 2px 4px var(--shadow-color);
         }
 
         header h1 {
             font-size: 2rem;
             margin: 0;
-            color: #333;
+            color: var(--text-color);
         }
 
         header h1 a {
@@ -59,7 +69,7 @@
             gap: 25px;
             padding: 15px 0;
             background-color: #ffffff;
-            border-bottom: 2px solid #e0e0e0;
+            border-bottom: 2px solid var(--border-color);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -68,7 +78,7 @@
         nav a {
             text-decoration: none;
             font-size: 1rem;
-            color: #2c2c2c;
+            color: var(--text-color);
             padding: 5px 10px;
             border-radius: 3px;
             transition: background-color 0.3s ease, color 0.3s ease;
@@ -100,13 +110,13 @@
             left: 0;
             right: 0;
             background-color: #ffffff;
-            border-top: 2px solid #e0e0e0;
+            border-top: 2px solid var(--border-color);
         }
 
         .mobile-menu a {
             padding: 10px;
             text-align: center;
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 1px solid var(--border-color);
         }
 
         .mobile-menu a:last-child {
@@ -124,21 +134,21 @@
             background-color: #fefefe;
             padding: 20px;
             margin-bottom: 30px;
-            border-left: 4px solid #333;
+            border-left: 4px solid var(--text-color);
             border-radius: 5px;
             font-size: 1rem;
             color: #555;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px var(--shadow-color);
         }
 
         .announcement a {
-            color: #0073e6;
+            color: var(--primary-color);
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         .announcement a:hover {
-            color: #005bb5;
+            color: var(--secondary-color);
         }
 
         h2 {
@@ -146,7 +156,7 @@
             font-size: 2rem;
             border-bottom: 2px solid #ddd;
             padding-bottom: 10px;
-            color: #2c2c2c;
+            color: var(--text-color);
         }
 
         .articles {
@@ -167,7 +177,7 @@
         .article h4 {
             margin: 0 0 15px;
             font-size: 1.2rem;
-            color: #0073e6;
+            color: var(--primary-color);
         }
 
         .article h4 a {
@@ -177,7 +187,7 @@
         }
 
         .article:hover h4 a {
-            color: #005bb5;
+            color: var(--secondary-color);
         }
 
         .article:hover::after {
@@ -187,7 +197,7 @@
             bottom: 0;
             width: 100%;
             height: 2px;
-            background-color: #0073e6;
+            background-color: var(--primary-color);
         }
 
         .metadata {
@@ -245,8 +255,8 @@
         footer {
             text-align: center;
             padding: 20px 0;
-            background-color: #fafafa;
-            border-top: 2px solid #e0e0e0;
+            background-color: var(--light-background);
+            border-top: 2px solid var(--border-color);
             font-size: 0.9rem;
             color: #777;
         }
@@ -444,6 +454,8 @@
     <footer>
         <p>&copy; 2025 Михаил Гуров</p>
     </footer>
+
+    
     <script>
         // Слайдер
         const slides = document.querySelectorAll('.slider img');
@@ -457,5 +469,19 @@
 
         setInterval(showNextSlide, 3000);
     </script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const menuButton = document.querySelector(".mobile-menu-button");
+        const mobileMenu = document.querySelector(".mobile-menu");
+
+        menuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("show");
+        });
+    });
+</script>
+
+    
 </body>
 </html>
