@@ -13,7 +13,7 @@
             align-items: center;
             height: 100vh;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #002233, #005566);
+            background: linear-gradient(135deg, #013220, #003333);
             color: #FFFFFF;
             text-align: center;
         }
@@ -21,9 +21,20 @@
         .container {
             max-width: 600px;
             padding: 20px;
-            border: 2px solid #00FFFF;
+            border: 3px solid #00FFFF;
             border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 51, 51, 0.9);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+        }
+
+        .header {
+            background-color: #00FFFF;
+            color: #000000;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border-radius: 5px 5px 0 0;
+            margin: -20px -20px 20px -20px;
         }
 
         .title {
@@ -36,6 +47,26 @@
             font-size: 1.5rem;
             font-family: 'Courier New', Courier, monospace;
             color: #00FFFF;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #FFFFFF;
+            background-color: #005555;
+            border: 2px solid #00FFFF;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #007777;
         }
 
         @media (max-width: 480px) {
@@ -51,8 +82,14 @@
 </head>
 <body>
 <div class="container">
+    <div class="header">Настройки куки</div>
     <div class="title">OM1BUF</div>
     <div class="morse">--- -- .---- -... ..- ..-.</div>
+    <div class="button-container">
+        <a href="#" class="button">Принять все</a>
+        <a href="#" class="button">Настроить</a>
+        <a href="#" class="button">Закрыть</a>
+    </div>
 </div>
 </body>
 </html>
