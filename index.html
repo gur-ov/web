@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Михаил Гуров</title>
+    <title>Вино - Михаил Гуров</title>
+    <link rel="stylesheet" href="./css/main.css"> <!-- Подключаем основной css -->
+    <link rel="stylesheet" href="./css/responsive.css"> <!-- Подключаем css адаптацию -->
+    <link rel="stylesheet" href="./css/article-metadata.css"> <!-- Подключаем css метаданные статей -->
+    <link rel="stylesheet" href="./css/article-cells.css"> <!-- Подключаем css ячейки статей -->
+    <link rel="stylesheet" href="./css/footer.css"> <!-- Подключаем css подвала -->
+    <link rel="stylesheet" href="./css/slider.css"> <!-- Подключаем css слайдера -->
+
+
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Georgia", serif;
-            color: #333;
-            background-color: #f9f9f9;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+
 
         header {
             text-align: center;
@@ -54,38 +51,21 @@
             border-color: #555;
         }
 
-        footer {
-            position: absolute;
-            bottom: 20px;
-            display: flex;
-            gap: 10px;
-        }
 
-        footer a {
-            width: 24px;
-            height: 24px;
-            display: inline-block;
-            transition: color 0.3s ease, border-color 0.3s ease;
-        }
-
-        footer a img {
-            width: 100%;
-            height: auto;
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-        }
-
-        footer a:hover img {
-            filter: grayscale(0%);
-        }
     </style>
+
 </head>
+
 <body>
+
     <header>
         <div class="logo-placeholder">
             <img src="./img/pr.png" alt="Фото профиля" style="width: 100px; height: auto; margin-right: 10px;">
         </div>
     </header>
+
+
+
     <nav>
         <a href="">Экскурсии</a>
         <a href="./text.html">Тексты</a>
@@ -93,8 +73,13 @@
         <a href="./radio">Радио</a>
         <a href="./philately">Филателия</a>
     </nav>
+
+
     <footer>     
         <a href="./links"><img src="https://www.svgrepo.com/show/501233/info-borderless.svg" alt="Info"></a>
     </footer>
+
+
+
 </body>
 </html>
