@@ -48,6 +48,27 @@
             margin-bottom: 20px;
         }
 
+        .menu {
+            margin-bottom: 20px;
+        }
+
+        .menu a {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 10px 15px;
+            color: #000000;
+            background-color: #00FF00;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .menu a:hover {
+            background-color: #00CC00;
+        }
+
         .back-button {
             display: inline-block;
             padding: 10px 20px;
@@ -73,6 +94,11 @@
             .morse {
                 font-size: 1.2rem;
             }
+
+            .menu a {
+                font-size: 0.9rem;
+                padding: 8px 12px;
+            }
         }
     </style>
 </head>
@@ -80,6 +106,10 @@
 <div class="container">
     <div class="title">OM1BUF</div>
     <div class="morse">--- -- .---- -... ..- ..-.</div>
+    <div class="menu">
+        <a href="./index.html">Home</a>
+        <a href="./schemes.html">Schemes</a>
+    </div>
     <div class="command-line">$ echo "Welcome to OM1BUF"</div>
     <a href="./index.html" class="back-button">Return to Homepage</a>
 </div>
