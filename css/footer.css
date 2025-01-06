@@ -8,7 +8,3 @@ footer {
     font-size: 0.9rem;
     color: #777;
 }
-
-footer img {
-    filter: grayscale(100%) brightness(50%) sepia(50%) hue-rotate(180deg);
-}
