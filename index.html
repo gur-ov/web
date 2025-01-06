@@ -5,53 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вино - Михаил Гуров</title>
     <link rel="stylesheet" href="./css/main.css"> <!-- Подключаем основной css -->
+    <link rel="stylesheet" href="./css/header.css"> <!-- Подключаем css header -->
+    <link rel="stylesheet" href="./css/menu.css"> <!-- Подключаем css меню -->
     <link rel="stylesheet" href="./css/responsive.css"> <!-- Подключаем css адаптацию -->
     <link rel="stylesheet" href="./css/article-metadata.css"> <!-- Подключаем css метаданные статей -->
     <link rel="stylesheet" href="./css/article-cells.css"> <!-- Подключаем css ячейки статей -->
     <link rel="stylesheet" href="./css/footer.css"> <!-- Подключаем css подвала -->
     <link rel="stylesheet" href="./css/slider.css"> <!-- Подключаем css слайдера -->
 
-
     <style>
-
-
-        header {
-            text-align: center;
-            margin-bottom: 50px;
+        .profile-img {
+            width: 150px;          /* Ограничение ширины */
+            height: 150px;         /* Ограничение высоты */
+            object-fit: cover;     /* Сохранение пропорций, обрезая изображение при необходимости */
+            border-radius: 50%;    /* Если нужно, чтобы изображение было круглым */
         }
-
-        header .logo-placeholder {
-            width: 150px;
-            height: 150px;
-            border: 1px solid #aaa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto 20px;
-            font-size: 0.9rem;
-            color: #555;
-        }
-
-        nav {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        nav a {
-            text-decoration: none;
-            font-size: 1.2rem;
-            color: #333;
-            border-bottom: 1px solid #333;
-            transition: color 0.3s ease, border-color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #555;
-            border-color: #555;
-        }
-
-
     </style>
 
 </head>
@@ -59,11 +27,8 @@
 <body>
 
     <header>
-        <div class="logo-placeholder">
-            <img src="./img/pr.png" alt="Фото профиля" style="width: 100px; height: auto; margin-right: 10px;">
-        </div>
+        <img src="./img/pr.png" alt="Фото профиля" class="profile-img">
     </header>
-
 
 
     <nav>
@@ -75,8 +40,9 @@
     </nav>
 
 
-    <footer>     
-        <a href="./links"><img src="https://www.svgrepo.com/show/501233/info-borderless.svg" alt="Info"></a>
+    <footer>
+        <p>&copy; 2025 Михаил Гуров —
+            <a href="./links"><img src="https://www.svgrepo.com/show/501233/info-borderless.svg" alt="Info"></a></p>
     </footer>
 
 
