@@ -1,0 +1,29 @@
+/* .css */
+
+.metadata {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 15px;
+}
+
+.metadata span {
+    display: block;
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.metadata p {
+    margin: 5px 0 10px;
+}
+
+.metadata ol {
+    margin: 5px 0 10px;
+    padding-left: 20px;
+    color: #555;
+}
+
+.metadata ol li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}

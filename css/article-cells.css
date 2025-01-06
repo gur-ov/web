@@ -1,0 +1,42 @@
+/* .css */
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.article {
+    position: relative;
+    padding: 20px;
+    background-color: #fbfbfb;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.article h4 {
+    margin: 0 0 15px;
+    font-size: 1.2rem;
+    color: #0073e6;
+}
+
+.article h4 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.article:hover h4 a {
+    color: #005bb5;
+}
+
+.article:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0073e6;
+}

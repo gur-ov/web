@@ -4,240 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вино - Михаил Гуров</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Georgia", serif;
-            color: #2c2c2c;
-            background-color: #f5f5f5;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        header {
-            text-align: center;
-            padding: 30px 0;
-            background-color: #fafafa;
-            border-bottom: 2px solid #e0e0e0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            font-size: 2rem;
-            margin: 0;
-            color: #333;
-        }
-
-        header h1 a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.3s ease;
-        }
-
-        header h1 a:hover {
-            color: #555;
-        }
-
-        header p {
-            font-style: italic;
-            margin: 5px 0 0;
-            font-size: 1.1rem;
-            color: #777;
-        }
-
-        header .subtitle {
-            margin-top: 10px;
-            font-size: 1rem;
-            color: #555;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            padding: 15px 0;
-            background-color: #ffffff;
-            border-bottom: 2px solid #e0e0e0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            text-decoration: none;
-            font-size: 1rem;
-            color: #2c2c2c;
-            padding: 5px 10px;
-            border-radius: 3px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #f0f0f0;
-            color: #555;
-        }
-
-        main {
-            flex: 1;
-            padding: 30px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .announcement {
-            background-color: #fefefe;
-            padding: 20px;
-            margin-bottom: 30px;
-            border-left: 4px solid #333;
-            border-radius: 5px;
-            font-size: 1rem;
-            color: #555;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .announcement a {
-            color: #0073e6;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .announcement a:hover {
-            color: #005bb5;
-        }
-
-        h2 {
-            margin-top: 50px;
-            font-size: 2rem;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            color: #2c2c2c;
-        }
-
-        .articles {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .article {
-            position: relative;
-            padding: 20px;
-            background-color: #fbfbfb;
-            border-radius: 8px;
-            transition: box-shadow 0.3s ease;
-        }
-
-        .article h4 {
-            margin: 0 0 15px;
-            font-size: 1.2rem;
-            color: #0073e6;
-        }
-
-        .article h4 a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.3s ease;
-        }
-
-        .article:hover h4 a {
-            color: #005bb5;
-        }
-
-        .article:hover::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 2px;
-            background-color: #0073e6;
-        }
-
-        .metadata {
-            font-size: 0.95rem;
-            color: #555;
-            margin-top: 15px;
-        }
-
-        .metadata span {
-            display: block;
-            font-size: 0.85rem;
-            color: #888;
-            margin-bottom: 5px;
-        }
-
-        .metadata p {
-            margin: 5px 0 10px;
-        }
-
-        .metadata ol {
-            margin: 5px 0 10px;
-            padding-left: 20px;
-            color: #555;
-        }
-
-        .metadata ol li {
-            margin-bottom: 5px;
-            font-size: 0.9rem;
-        }
-
-        .slider {
-            position: relative;
-            margin-bottom: 30px;
-            width: 100%;
-            height: 300px;
-            background-color: #ddd;
-            overflow: hidden;
-        }
-
-        .slider img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            transition: opacity 1s ease;
-        }
-
-        .slider img.active {
-            opacity: 1;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #fafafa;
-            border-top: 2px solid #e0e0e0;
-            font-size: 0.9rem;
-            color: #777;
-        }
-
-        @media (max-width: 768px) {
-            .articles {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            }
-        }
-
-        @media (max-width: 480px) {
-            .articles {
-                grid-template-columns: 1fr;
-            }
-
-            .slider {
-                display: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./css/main.css"> <!-- Подключаем основной css -->
+    <link rel="stylesheet" href="./css/menu.css"> <!-- Подключаем css меню -->
+    <link rel="stylesheet" href="./css/responsive.css"> <!-- Подключаем css адаптацию -->
+    <link rel="stylesheet" href="./css/article-metadata.css"> <!-- Подключаем css метаданные статей -->
+    <link rel="stylesheet" href="./css/article-cells.css"> <!-- Подключаем css ячейки статей -->
+    <link rel="stylesheet" href="./css/footer.css"> <!-- Подключаем css подвала -->
 </head>
 <body>
     <header>
         <h1><a href="index.html">Михаил Гуров</a></h1>
-        <p>О вине и виноделии в Словакии на русском языке</p>
+        <p>О виноделии в Словакии на русском языке</p>
     </header>
     <nav>
         <a href="#wine">Вино</a>
@@ -387,18 +164,10 @@
     <footer>
         <p>&copy; 2025 Михаил Гуров</p>
     </footer>
-    <script>
-        // Слайдер
-        const slides = document.querySelectorAll('.slider img');
-        let currentSlide = 0;
 
-        function showNextSlide() {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
 
-        setInterval(showNextSlide, 3000);
-    </script>
+    <!-- Подключаем файл с JavaScript -->
+    <script src="./js/slider.js"></script>
+
 </body>
 </html>
