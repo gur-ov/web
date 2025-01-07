@@ -76,7 +76,7 @@ nav a:hover {
     }
 
     .menu-toggle {
-        display: block;
+        display: none;
     }
 }
 
