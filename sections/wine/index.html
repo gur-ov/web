@@ -18,12 +18,19 @@
         <h1><a href="../../index.html">Михаил Гуров</a></h1>
         <p>О виноделии в Словакии на русском языке</p>
     </header>
+
+
     <nav>
-        <a href="#wine">Вино</a>
-        <a href="#wineshops">Винотеки</a>
-        <a href="#winemakers">Виноделы</a>
-        <a href="#grape">Виноград</a>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <div class="menu">
+            <a href="#wine">Вино</a>
+            <a href="#wineshops">Винотеки</a>
+            <a href="#winemakers">Виноделы</a>
+            <a href="#grape">Виноград</a>
+        </div>
     </nav>
+
+
     <main>
         <div class="slider">
             <img src="slider1.jpg" alt="Слайд 1" class="active">
@@ -172,6 +179,15 @@
 
     <!-- Подключаем файл с JavaScript -->
     <script src="../../js/slider.js"></script>
+
+    <script>
+        const toggleButton = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        toggleButton.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
