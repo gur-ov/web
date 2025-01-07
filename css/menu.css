@@ -1,6 +1,4 @@
-/* menu.css */
-
-/* Общий стиль */
+/* Общий стиль для навигации */
 nav {
     display: flex;
     justify-content: center;
@@ -28,7 +26,7 @@ nav a:hover {
     color: #555;
 }
 
-/* Скрыть кнопку на больших экранах */
+/* Кнопка-гамбургер */
 .menu-toggle {
     display: none;
     background-color: #ffffff;
@@ -41,7 +39,7 @@ nav a:hover {
     z-index: 1100;
 }
 
-/* Скрыть меню по умолчанию на мобильных */
+/* Меню скрыто по умолчанию */
 .menu {
     display: none;
     flex-direction: column;
@@ -56,12 +54,12 @@ nav a:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Когда меню открыто */
+/* Показать меню при активном состоянии */
 .menu.active {
     display: flex;
 }
 
-/* Адаптивный дизайн */
+/* Для ПК: Меню в строку, кнопка скрыта */
 @media (min-width: 768px) {
     .menu {
         display: flex;
@@ -69,9 +67,17 @@ nav a:hover {
         position: static;
         box-shadow: none;
         border: none;
+        padding: 0;
     }
 
     .menu-toggle {
         display: none;
+    }
+}
+
+/* Для мобильных: Кнопка-гамбургер видима */
+@media (max-width: 767px) {
+    .menu-toggle {
+        display: block;
     }
 }
