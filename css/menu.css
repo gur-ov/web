@@ -28,11 +28,9 @@ nav a:hover {
 
 .menu-toggle {
     display: none;
-    background-color: #ffffff; /* Цвет кнопки */
     border: none; /* Убираем границы */
-    font-size: 2.5rem; /* Размер кнопки */
     cursor: pointer; /* Курсор при наведении */
-    position: relative; /* Позиционируем относительно родителя */
+    position: absolute; /* Позиционируем относительно родителя */
     right: 15px; /* Расстояние от правого края */
     top: 50%; /* Сдвигаем кнопку к середине по вертикали */
     transform: translateY(-50%); /* Выравниваем кнопку по вертикальному центру */
@@ -40,7 +38,7 @@ nav a:hover {
     padding: 5px; /* Отступы внутри кнопки */
     height: 40px; /* Высота кнопки */
     width: 40px; /* Ширина кнопки */
-    border-radius: 5px; /* Скругление углов */
+    border-radius: 0px; /* Скругление углов */
 }
 
 /* Меню скрыто по умолчанию */
